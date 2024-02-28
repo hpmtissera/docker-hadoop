@@ -4,7 +4,6 @@ MAINTAINER Ivan Ermilov <ivan.s.ermilov@gmail.com>
 
 RUN java -version
 COPY WordCount.java /opt/hadoop/applications/WordCount.java
-COPY WordCount.jar /opt/hadoop/applications/WordCount.jar
 WORKDIR /opt/hadoop/applications/
 ENV HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 RUN /opt/hadoop-3.2.1/bin/hadoop com.sun.tools.javac.Main WordCount.java
