@@ -13,6 +13,7 @@ See repository branches for supported hadoop versions
 
 To deploy an example HDFS cluster, run:
 ```
+  make build
   docker-compose up
 ```
 
